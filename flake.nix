@@ -23,6 +23,9 @@
             starship
             # Shell helpers the harness .zshrc calls at startup (else "command not found").
             direnv atuin zoxide
+            # web-estate's Research build (pandoc for markdown, ImageMagick's magick for images), for the
+            # mirror and fake-data previews (estate-zones.md, steps 5 and A).
+            pandoc imagemagick
           ];
         };
       });
