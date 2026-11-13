@@ -1,7 +1,7 @@
 # A prebuilt exe.dev lab image: exeuntu plus everything setup.sh would fetch from the open internet, so a VM
 # made with --egress=integrations (no internet, only its integrations) starts ready. Public on purpose:
 # it holds only public software. The harness and private repos come at first boot, through integrations.
-FROM boldsoftware/exeuntu:latest
+FROM ghcr.io/boldsoftware/exeuntu:latest
 USER root
 
 # zsh, without dpkg's config-file prompt; Rex from Superlogical's apt repository (preview channel).
