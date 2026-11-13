@@ -21,6 +21,8 @@
             mise
             # Shell, matching the Lenovo's prompt.
             starship
+            # Shell helpers the harness .zshrc calls at startup (else "command not found").
+            direnv atuin zoxide
           ];
         };
       });
