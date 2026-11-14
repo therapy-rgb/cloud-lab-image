@@ -23,8 +23,9 @@
             starship
             # Shell helpers the harness .zshrc calls at startup (else "command not found").
             direnv atuin zoxide
-            # The Lenovo's zsh plugins, read from ~/.nix-profile/share on lab hosts (2026-11-13). No fzf-tab: its module is built for Nix's zsh, and Ubuntu's zsh asks to rebuild it in every shell.
-            fzf zsh-autosuggestions zsh-syntax-highlighting carapace eza
+            # The Lenovo's zsh and its plugins, read from ~/.nix-profile/share on lab hosts (2026-11-13). The login
+            # shell is this zsh (setup.sh), not Ubuntu's: fzf-tab's module is built for it and won't load in Ubuntu's.
+            zsh fzf zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-tab carapace eza
             # web-estate's Research build (pandoc for markdown, ImageMagick's magick for images), for the
             # mirror and fake-data previews (estate-zones.md, steps 5 and A).
             pandoc imagemagick
