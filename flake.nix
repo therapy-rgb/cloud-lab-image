@@ -23,6 +23,8 @@
             starship
             # Shell helpers the harness .zshrc calls at startup (else "command not found").
             direnv atuin zoxide
+            # The Lenovo's zsh plugins and tab completion, read from ~/.nix-profile/share on lab hosts (2026-11-13).
+            fzf zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-tab carapace eza
             # web-estate's Research build (pandoc for markdown, ImageMagick's magick for images), for the
             # mirror and fake-data previews (estate-zones.md, steps 5 and A).
             pandoc imagemagick
